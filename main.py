@@ -3,4 +3,7 @@
 
 A for coffee: the builder's fuel. One letter, nothing else.
 """
-print(open("entry.txt").read().strip())
+import os
+
+here = os.path.dirname(os.path.abspath(__file__))
+print(open(os.path.join(here, "entry.txt")).read().strip())
